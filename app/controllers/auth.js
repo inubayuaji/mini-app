@@ -26,6 +26,7 @@ exports.attempt = async function (req, res) {
 };
 
 exports.logout = function (req, res) {
+  res.clearCookie("token");
   return res.redirect("/");
 };
 
