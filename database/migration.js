@@ -3,7 +3,7 @@ const db = require("./db");
 async function up(db) {
   await db.schema
     .createTable("admin", function (table) {
-      table.string("username").primary();
+      table.string("email").primary();
       table.string("nama");
       table.string("password");
     })
