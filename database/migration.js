@@ -6,6 +6,7 @@ async function up(db) {
       table.string("email").primary();
       table.string("nama");
       table.string("password");
+      table.string("token");
     })
     .then(function () {
       process.exit();
